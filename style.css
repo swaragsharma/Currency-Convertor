@@ -1,0 +1,59 @@
+.weight
+		{text-align: center;
+			font-size: 50px;
+			color:white;
+			font-weight: bolder;
+		}
+		#rinput
+		{
+			border: 5px solid black;
+			height: 50px;
+			width: 34%;
+            color: black;
+            font-size: 35px;
+            background-color: yellow;
+		}
+		.indianrupees 
+		{
+			border: 1px solid black;
+			height: 50px;
+			width: 95%;
+            margin: auto;
+            font-size: 35px;
+            background-color: red;
+		}
+		.bangladeshi 
+		{
+			border: 1px solid black;
+			height: 50px;
+			width: 95%;
+			font-size: 35px;
+            margin: auto;
+            background-color: green;
+		}
+		.european
+		{
+			border: 1px solid black;
+			height: 50px;
+			width: 95%;
+			font-size: 35px;
+            margin: auto;
+            background-color: orange;
+		}
+		#output
+		{
+			border:5px solid black;
+			width: 34%;
+		}
+		.indianrupees[placeholder]:empty:before 
+		{
+        content: attr(placeholder);
+        }
+        .bangladeshi[placeholder]:empty:before 
+		{
+        content: attr(placeholder);
+        }
+        .european[placeholder]:empty:before 
+		{
+        content: attr(placeholder);
+        }

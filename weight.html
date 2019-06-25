@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency Convertor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: grey;background-image: url(img.jpg);">
+ <script type="text/javascript" src="script.js"></script>
+ <center><input type="text" name="" id="rinput" placeholder="Enter Amount in Dollar"><br><br></center>
+ <center><div id="output"><br>
+ <div id="indian" class="indianrupees" placeholder="Rupees" contenteditable="false"></div><br>
+ <div id="bangla" class="bangladeshi" placeholder="Bangladeshi Taka" contenteditable="false"></div><br>
+ <div id="euro" class="european" placeholder="Euro" contenteditable="false"></div><br>
+</div></center>
+ <script>
+ 	document.getElementById('rinput').addEventListener("input",function(e)
+ 	{  
+ 	document.getElementById("output").style.visibility = "visible";
+ 		let dlr = e.target.value ;
+ 		document.getElementById('indian').innerHTML = dlr*69.80 +" Rupees";
+ 		document.getElementById('bangla').innerHTML = dlr*84.46 +" Taka";
+ 		document.getElementById('euro').innerHTML = dlr*0.89 +" Euro";
+ 	});
+   document.getElementById("output").style.visibility = "hidden";
+ </script>
+</body>
+</html>
